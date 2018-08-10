@@ -1,0 +1,18 @@
+<html>
+    <head>
+            <title>RB's Good Job!</title>
+    </head>
+    <body>
+        <center>
+            <div>
+                <span class="big">Congratulations!</span><br>
+                <span class="small">The information you entered has been sent to our S3 bucket!</span><br>
+                <span class="small">A second csv file was also sent, containing your entries validity.</span><br>
+                <form method="post" action="/more">
+                    <input type="submit" value="Have More ISBN(s)?">
+                    <input type="hidden" name="count" value="<%= count %>">
+                </form>
+            </div>
+        </center>
+    </body>
+</html>

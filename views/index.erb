@@ -1,0 +1,19 @@
+<html>
+    <head>
+            <title>RB's ISBN CSV Style</title>
+    </head>
+    <body>
+        <center>
+            <div>
+                <span>Please Enter ISBN(s)<br>(each seperated by a new line)</span>
+                <form method="post" action="/store-check">
+                    <center>
+                        <textarea id="isbn_entry" name="user_isbn" placeholder="Enter ISBN(s) Here." required></textarea><br>
+                        <input type="submit" value="Validate!">
+                    </center>
+                    <input type="hidden" name="count" value="<%= count %>">
+                </form>
+            </div>
+        </center>
+    </body>
+</html>
