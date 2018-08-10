@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'aws-sdk-s3'
-require 'CSV'
+require 'csv'
 require 'json'
 require_relative 'isbn.rb'
 require_relative 'isbn_csv.rb'
