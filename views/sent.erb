@@ -11,6 +11,36 @@
                 <form method="post" action="/more">
                     <input type="submit" value="Have More ISBN(s)?">
                     <input type="hidden" name="count" value="<%= count %>">
+                    <div>
+                        <table>
+                            <tr>
+                                <th>ISBN Entries</th>
+                                <th>Valid?</th>
+                            </tr>
+                            <% isbn.each_with_index do |v,i| %>
+                                <tr class="new">
+                                    <td>
+                                        <input type="hidden" name="isbn[]" value="<%= v %>">
+                                        <div><%= v %></div>
+                                    </td><td>
+                                        <input type="hidden" name="valid[]" value="<%= valid[i] %>">
+                                        <div><%= valid[i] %></div>
+                                    </td>
+                                </tr>
+                            <% end %>
+                            <% stored_isbn.each_with_index do |v,i| %>
+                                <tr class="old">
+                                    <td>
+                                        <input type="hidden" name="isbn[]" value="<%= v %>">
+                                        <div><%= v %></div>
+                                    </td><td>
+                                        <input type="hidden" name="valid[]" value="<%= stored_valid[i] %>">
+                                        <div><%= stored_valid[i] %>
+                                    </td>
+                                </tr>
+                            <% end %>
+                        </table>
+                    </div>
                 </form>
             </div>
         </center>

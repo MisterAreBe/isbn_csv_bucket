@@ -12,6 +12,12 @@
                         <input type="submit" value="Validate!">
                     </center>
                     <input type="hidden" name="count" value="<%= count %>">
+                    <% isbn.each do |v| %>
+                        <input type="hidden" name="stored_isbn[]" value="<%= v %>">
+                    <% end %>
+                    <% valid.each do |v| %>
+                        <input type="hidden" name="stored_valid[]" value="<%= v %>">
+                    <% end %>
                 </form>
             </div>
         </center>

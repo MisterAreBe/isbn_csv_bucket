@@ -38,3 +38,26 @@ input[type=submit]{
     box-shadow: 1px 1px 5px darkslateblue;
     border-radius: 5%;
 }
+.new{
+    background-color: #bcbe15;
+    color: #00008b;
+}
+.old{ 
+    background-color: #ff0000;
+    color: #ffffff;
+}
+table{
+    width: 50%;
+    margin: 1%;
+}
+th{
+    background-color: #00008b;
+    font-size:2rem;
+    color: #bcbe15;
+}
+td{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1%;
+    margin: 1%;
+}
